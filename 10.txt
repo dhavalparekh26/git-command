@@ -1,0 +1,128 @@
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop$ git push
+Everything up-to-date
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop$ git add .
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop$ git status
+On branch command
+Your branch is up to date with 'origin/command'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   MyQuoteBook
+
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop$ git commit MyQuoteBook/
+Aborting commit due to empty commit message.
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop$ git commit -m "some new command learn"
+[command 17c1ca6] some new command learn
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop$ git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 268 bytes | 89.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0)
+To https://github.com/dhavalparekh26/test.git
+   5b37303..17c1ca6  command -> command
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop$ cd MyQuoteBook/
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ touch motivational quotes
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        motivational
+        quotes
+
+nothing added to commit but untracked files present (use "git add" to track)
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ gti add motivational 
+
+Command 'gti' not found, did you mean:
+
+  command 'gtg' from snap getting-things-gnome (0.6)
+  command 'ti' from deb ticgit (1.0.2.17-2.1)
+  command 'gt' from deb genometools (1.6.1+ds-2)
+  command 'gtf' from deb xserver-xorg-core (2:1.20.13-1ubuntu1~20.04.2)
+  command 'gli' from deb ruby-gli (2.14.0-1)
+  command 'gth' from deb genomethreader (1.7.3+dfsg-5)
+  command 'git' from deb git (1:2.25.1-1ubuntu3.2)
+  command 'gtv' from deb smpeg-gtv (0.4.5+cvs20030824-8build1)
+  command 'gt5' from deb gt5 (1.5.0~20111220+bzr29-3)
+  command 'gsi' from deb gambc (4.8.8-3.1)
+  command 'bti' from deb bti (034-4build1)
+  command 'gmi' from deb gmailieer (0.10-1)
+  command 'ghi' from deb ghi (1.2.0-1)
+
+See 'snap info <snapname>' for additional versions.
+
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$  git rm quotes 
+fatal: pathspec 'quotes' did not match any files
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ git add .
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ git commit -m "add new file and some content"[main 4f66a72] add new file and some content
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 motivational
+ create mode 100644 quotes
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 359 bytes | 29.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/dhavalparekh26/git-command.git
+   26e7f92..4f66a72  main -> main
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ git main
+git: 'main' is not a git command. See 'git --help'.
+
+The most similar command is
+        mailinfo
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ git branch
+* main
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ cd ..
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop$ git branch
+* command
+  main
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop$ git push
+Everything up-to-date
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop$ git pull
+Already up to date.
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop$ git checkout
+M       MyQuoteBook
+Your branch is up to date with 'origin/command'.
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop$ git checkout main
+warning: unable to rmdir 'MyQuoteBook': Directory not empty
+Switched to branch 'main'
+Your branch is up to date with 'origin/master'.
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop$ cd MyQuoteBook/
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ git branch command
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ git  status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ git checkout command
+Switched to branch 'command'
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ git status
+On branch command
+nothing to commit, working tree clean
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ git push
+fatal: The current branch command has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin command
+
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ git push --set-upstream origin command
+Total 0 (delta 0), reused 0 (delta 0)
+remote: 
+remote: Create a pull request for 'command' on GitHub by visiting:
+remote:      https://github.com/dhavalparekh26/git-command/pull/new/command
+remote: 
+To https://github.com/dhavalparekh26/git-command.git
+ * [new branch]      command -> command
+Branch 'command' set up to track remote branch 'command' from 'origin'.
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ 
