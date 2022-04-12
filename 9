@@ -1,0 +1,214 @@
+<-----1---->
+dhaval.p@ah.zymrinc.com@dhaval-p:~$ pwd
+/home/dhaval.p@ah.zymrinc.com
+dhaval.p@ah.zymrinc.com@dhaval-p:~$ cd Desktop/
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop$ mkdir MyQuoteBook
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop$ cd MyQuoteBook/
+<-----2----->
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ touch happiness.txt
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ git  init
+Initialized empty Git repository in /home/dhaval.p@ah.zymrinc.com/Desktop/MyQuoteBook/.git/
+<-----3----->
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ git add .
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   happiness.txt
+
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ git commit -m "initial commit"
+[master (root-commit) 0ab8ca1] initial commit
+ 1 file changed, 2 insertions(+)
+ create mode 100644 happiness.txt
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ git log
+commit 0ab8ca1d9214ebcdbb3f496c44f1d9fd7cb5926a (HEAD -> master)
+Author: Dhaval.parekh <dhaval.parekh@zymr.com>
+Date:   Tue Apr 12 10:03:26 2022 +0530
+
+    initial commit
+<-----4------->
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ cd .
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ ls
+happiness.txt
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ touch humor.txt
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	humor.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$  git add .
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ git add .
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   humor.txt
+
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ git commit -m "modern india"
+[master 4b62adb] modern india
+ 1 file changed, 3 insertions(+)
+ create mode 100644 humor.txt
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ git log
+commit 4b62adbe33f963b5765178e3d661dcaad5b60a0e (HEAD -> master)
+Author: Dhaval.parekh <dhaval.parekh@zymr.com>
+Date:   Tue Apr 12 10:09:57 2022 +0530
+
+    modern india
+
+commit 0ab8ca1d9214ebcdbb3f496c44f1d9fd7cb5926a
+Author: Dhaval.parekh <dhaval.parekh@zymr.com>
+Date:   Tue Apr 12 10:03:26 2022 +0530
+<-----5,6------>
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   happiness.txt
+	modified:   humor.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ git add .
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ git commit -m "add new code both file"
+[master faedb27] add new code both file
+ 2 files changed, 2 insertions(+)
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ git status
+On branch master
+nothing to commit, working tree clean
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ git log
+commit faedb2785560aaf10a3a6c6dcc5526260d55a364 (HEAD -> master)
+Author: Dhaval.parekh <dhaval.parekh@zymr.com>
+Date:   Tue Apr 12 10:13:18 2022 +0530
+
+    add new code both file
+
+commit 4b62adbe33f963b5765178e3d661dcaad5b60a0e
+Author: Dhaval.parekh <dhaval.parekh@zymr.com>
+Date:   Tue Apr 12 10:09:57 2022 +0530
+
+    modern india
+
+commit 0ab8ca1d9214ebcdbb3f496c44f1d9fd7cb5926a
+Author: Dhaval.parekh <dhaval.parekh@zymr.com>
+Date:   Tue Apr 12 10:03:26 2022 +0530
+
+    initial commit
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ ^C
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ 
+<----------7,8------------>
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ git revetgit revet
+git: 'revetgit' is not a git command. See 'git --help'.
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ git revert -n HEAD
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ git status
+On branch master
+You are currently reverting commit faedb27.
+  (all conflicts fixed: run "git revert --continue")
+  (use "git revert --skip" to skip this patch)
+  (use "git revert --abort" to cancel the revert operation)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   happiness.txt
+	modified:   humor.txt
+
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ git commit -m "git revet commit"
+[master 6d1306d] git revet commit
+ 2 files changed, 2 deletions(-)
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ git log
+commit 6d1306de1e0a9b94983c3773ced5f1210de25575 (HEAD -> master)
+Author: Dhaval.parekh <dhaval.parekh@zymr.com>
+Date:   Tue Apr 12 10:17:28 2022 +0530
+
+    git revet commit
+
+commit faedb2785560aaf10a3a6c6dcc5526260d55a364
+Author: Dhaval.parekh <dhaval.parekh@zymr.com>
+Date:   Tue Apr 12 10:13:18 2022 +0530
+
+    add new code both file
+
+commit 4b62adbe33f963b5765178e3d661dcaad5b60a0e
+Author: Dhaval.parekh <dhaval.parekh@zymr.com>
+Date:   Tue Apr 12 10:09:57 2022 +0530
+
+    modern india
+
+commit 0ab8ca1d9214ebcdbb3f496c44f1d9fd7cb5926a
+Author: Dhaval.parekh <dhaval.parekh@zymr.com>
+Date:   Tue Apr 12 10:03:26 2022 +0530
+
+    initial commit
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ git resetgit revert -n HEAD
+git: 'resetgit' is not a git command. See 'git --help'.
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ git reset 
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ git starus
+git: 'starus' is not a git command. See 'git --help'.
+
+The most similar command is
+	status
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ git status
+On branch master
+nothing to commit, working tree clean
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ git log
+commit 6d1306de1e0a9b94983c3773ced5f1210de25575 (HEAD -> master)
+Author: Dhaval.parekh <dhaval.parekh@zymr.com>
+Date:   Tue Apr 12 10:17:28 2022 +0530
+
+    git revet commit
+
+commit faedb2785560aaf10a3a6c6dcc5526260d55a364
+Author: Dhaval.parekh <dhaval.parekh@zymr.com>
+Date:   Tue Apr 12 10:13:18 2022 +0530
+
+    add new code both file
+
+commit 4b62adbe33f963b5765178e3d661dcaad5b60a0e
+Author: Dhaval.parekh <dhaval.parekh@zymr.com>
+Date:   Tue Apr 12 10:09:57 2022 +0530
+
+    modern india
+
+commit 0ab8ca1d9214ebcdbb3f496c44f1d9fd7cb5926a
+Author: Dhaval.parekh <dhaval.parekh@zymr.com>
+Date:   Tue Apr 12 10:03:26 2022 +0530
+
+    initial commit
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ git reset 6d1306d --hard
+HEAD is now at 6d1306d git revet commit
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ git log
+commit 6d1306de1e0a9b94983c3773ced5f1210de25575 (HEAD -> master)
+Author: Dhaval.parekh <dhaval.parekh@zymr.com>
+Date:   Tue Apr 12 10:17:28 2022 +0530
+
+    git revet commit
+
+commit faedb2785560aaf10a3a6c6dcc5526260d55a364
+Author: Dhaval.parekh <dhaval.parekh@zymr.com>
+Date:   Tue Apr 12 10:13:18 2022 +0530
+
+    add new code both file
+
+commit 4b62adbe33f963b5765178e3d661dcaad5b60a0e
+Author: Dhaval.parekh <dhaval.parekh@zymr.com>
+Date:   Tue Apr 12 10:09:57 2022 +0530
+
+    modern india
+
+commit 0ab8ca1d9214ebcdbb3f496c44f1d9fd7cb5926a
+Author: Dhaval.parekh <dhaval.parekh@zymr.com>
+Date:   Tue Apr 12 10:03:26 2022 +0530
+
+    initial commit
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ 
+
+-------------------------------------------------->
+git key----->
+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
+
+    initial commit
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ 
