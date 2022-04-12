@@ -1,0 +1,127 @@
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ touch 11.txt
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ git branch
+  command
+* main
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        11.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ 
+git add .
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ git commit -m "assiment 3 added"
+[main c065829] assiment 3 added
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 11.txt
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ git branch
+  command
+* main
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ git merge command 
+Already up to date.
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ git branch
+  command
+* main
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ git merge command
+Already up to date.
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ git  merge main
+Already up to date.
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ git branc motivation
+git: 'branc' is not a git command. See 'git --help'.
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ git branch motivation
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ git branch
+  command
+* main
+  motivation
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ git merge motivation 
+Already up to date.
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ git branch 
+  command
+* main
+  motivation
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ git merge motivation 
+Already up to date.
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ 
+git log
+commit c065829192cad6de9383e8fc5b4a8899c0a88491 (HEAD -> main, motivation)
+Author: Dhaval.parekh <dhaval.parekh@zymr.com>
+Date:   Tue Apr 12 12:44:21 2022 +0530
+
+    assiment 3 added
+
+commit c7bc0b6431b1477bcf9ca1b8875a15dfe9d8a3b2 (origin/
+
+commit c7bc0b6431b1477bcf9ca1b8875a15dfe9d8a3b2 (origin/command, command)
+Author: Dhaval.parekh <dhaval.parekh@zymr.com>
+Date:   Tue Apr 12 12:20:48 2022 +0530
+
+    motivational file is change
+
+commit 2f44ef9e4987a6cfd7c243230f85957f7a20d03d
+Author: Dhaval.parekh <dhaval.parekh@zymr.com>
+Date:   Tue Apr 12 12:18:53 2022 +0530
+
+    add some text line code
+
+commit 52a6dd82ba0b5ad461d1c415a84757ce4554473d
+Author: Dhaval.parekh <dhaval.parekh@zymr.com>
+Date:   Tue Apr 12 12:17:15 2022 +0530
+
+    secound partical
+
+commit 4f66a72a04be3627c038c3ff8236e965894f140a (origin/
+main)
+Author: Dhaval.parekh <dhaval.parekh@zymr.com>
+Date:   Tue Apr 12 12:07:16 2022 +0530
+
+    add new file and some content
+
+commit 26e7f92665ac7ece7a985c2e641ef2028f5c29ca
+Author: dhavalparekh26 <103402082+dhavalparekh26@users.n
+oreply.github.com>
+Date:   Tue Apr 12 10:57:28 2022 +0530
+
+    9
+
+commit 6d1306de1e0a9b94983c3773ced5f1210de25575
+Author: Dhaval.parekh <dhaval.parekh@zymr.com>
+Date:   Tue Apr 12 10:17:28 2022 +0530
+
+    git revet commit
+
+commit faedb2785560aaf10a3a6c6dcc5526260d55a364
+Author: Dhaval.parekh <dhaval.parekh@zymr.com>
+Date:   Tue Apr 12 10:13:18 2022 +0530
+
+    add new code both file
+
+commit 4b62adbe33f963b5765178e3d661dcaad5b60a0e
+Author: Dhaval.parekh <dhaval.parekh@zymr.com>
+Date:   Tue Apr 12 10:09:57 2022 +0530
+
+    modern india
+
+commit 0ab8ca1d9214ebcdbb3f496c44f1d9fd7cb5926a
+Author: Dhaval.parekh <dhaval.parekh@zymr.com>
+Date:   Tue Apr 12 10:03:26 2022 +0530
+
+    initial commit
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$ git branch -d  motivation 
+Deleted branch motivation (was c065829).
+dhaval.p@ah.zymrinc.com@dhaval-p:~/Desktop/MyQuoteBook$  
